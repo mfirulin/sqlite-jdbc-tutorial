@@ -11,7 +11,7 @@ public class SQLiteJDBCDriverConnection {
         DatabaseMetaData meta = null;
         
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:C:/sqlite/db/test.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:C://sqlite/db/test.db");
             meta = conn.getMetaData();
             System.out.println("Connection to SQLite has been established. The driver name is " + meta.getDriverName());
             
