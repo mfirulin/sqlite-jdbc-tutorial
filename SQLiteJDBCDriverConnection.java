@@ -2,15 +2,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
  
-/**
- * @author sqlitetutorial.net
- */
 public class SQLiteJDBCDriverConnection {
-    /**
-     * Connect to a sample database
-     */
-    public static void connect() {
+
+    public static void main(String[] args) {
+        
         Connection conn = null;
+        
         try {
             // db parameters
             String url = "jdbc:sqlite:C:/sqlite/db/test.db";
@@ -30,11 +27,5 @@ public class SQLiteJDBCDriverConnection {
                 System.out.println(ex.getMessage());
             }
         }
-    }
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        connect();
     }
 }
