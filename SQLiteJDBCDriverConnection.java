@@ -9,11 +9,7 @@ public class SQLiteJDBCDriverConnection {
         Connection conn = null;
         
         try {
-            // db parameters
-            String url = "jdbc:sqlite:C:/sqlite/db/test.db";
-            // create a connection to the database
-            conn = DriverManager.getConnection(url);
-            
+            conn = DriverManager.getConnection("jdbc:sqlite:C:/sqlite/db/test.db");
             System.out.println("Connection to SQLite has been established.");
             
         } catch (SQLException e) {
