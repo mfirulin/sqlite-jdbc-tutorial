@@ -40,8 +40,8 @@ public class SQLiteJDBCDriverSelectData {
         String sql = "SELECT id, name, capacity FROM warehouses";
         
         try (Connection conn = this.connect();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)){
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql)){
             
             // Loop through the result set
             while (rs.next()) {
